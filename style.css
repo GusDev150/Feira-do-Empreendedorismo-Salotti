@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+/* ================= Reset básico ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= Body ================= */
+body {
+  background-color: #ffe6ea;
+}
+
+/* ================= Header ================= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+  padding: 1rem 2rem; /* espaço interno */
+}
+
+/* Logo */
+header img {
+  height: 170px; /* ajuste conforme necessário */
+  width: auto;
+  display: block;
+  background-color: white;
+  border-radius: 360px;
+  padding: 5px;
+}
+
+/* Links do Header */
+header a {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  margin-left: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: brown;
+  text-align: center;
+
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid brown;
+
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover com efeito de botão */
+header a:hover {
+  background-color: #ffe6e6;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= Títulos ================= */
+.titulo {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 70px;
+}
+
+.titulo-2 {
+  color: #8b0000;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 70px;
+  font-family: 'Pinyon Script', cursive;
+}
+
+/* ================= Seção “Sobre Nós” ================= */
+.somoso1i {
+  margin: 2rem auto;
+  padding: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a2c2a; /* marrom suave */
+  background-color: #fff5f5; /* fundo clarinho */
+  
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.somoso1i h1 {
+  font-size: 4rem;
+  color: #8b0000; /* vermelho vinho */
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.somoso1i p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= Imagens do Podium ================= */
+.imagens-podio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  margin-top: -100px;
+}
+
+.imagens-podio img {
+  transform: rotate(-90deg); /* deixa horizontal fixo */
+  display: block;
+  margin: 0 auto; /* centraliza */
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover mantendo a rotação */
+.imagens-podio img:hover {
+  transform: rotate(-90deg) scale(1.05); /* mantém horizontal e aumenta levemente */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Cards de cores ================= */
+.cards-container {
+  display: flex;
+  justify-content: space-between; /* distribui espaço entre os cards */
+  align-items: flex-start;
+  flex-wrap: wrap; /* permite quebrar linha em telas menores */
+  gap: 1.5rem;
+  margin-top: -5rem;
+}
+
+.card {
+  background-color: #fff5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+
+  flex: 1 1 calc(16% - 1rem); /* ocupa aproximadamente 16% da largura */
+  max-width: calc(16% - 1rem); /* mantém proporção para 6 cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color: #4a2c2a;
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Opções de Cartinhas ================= */
+.opcao {
+  margin: 2rem 0;
+}
+
+.opcao-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* espaço entre imagem e texto */
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #fff5f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.opcao-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.opcao-texto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a2c2a;
+}
+
+.opcao-texto h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.opcao-texto p {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+footer {
+    background-color: pink;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 33.3%;
+}
+
+h3 {
+    color: #8b0000;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color: black;
+    font-size: 25px;
+}
+
+a {
+    color: #4a2c2a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffe6e6;
+}
+
+.social-icons i:hover {
+    color: #ffe6e6;
+}
+
+.bottom-bar {
+    background-color: #ffe6ea;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #4a2c2a;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* ================= Responsividade ================= */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header a {
+    margin: 0.5rem 0;
+    width: 80%;
+  }
+
+  header img {
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  /* Títulos */
+  .titulo, .titulo-2 {
+    font-size: 40px;
+    padding: 1rem;
+  }
+
+  /* Seção sobre nós */
+  .somoso1i {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .somoso1i h1 {
+    font-size: 2.5rem;
+  }
+
+  .somoso1i p {
+    font-size: 1rem;
+  }
+
+  /* Imagens do podio */
+  .imagens-podio {
+    flex-direction: column;
+    margin-top: -50px;
+  }
+
+  .imagens-podio img {
+    max-width: 80%;
+    margin: 1rem 0;
+  }
+
+  /* Cards */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  /* Opção de cartinhas */
+  .opcao-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .opcao-container img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .opcao-texto h2 {
+    font-size: 1.3rem;
+  }
+
+  .opcao-texto p {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .footer-content {
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content p {
+    width: 100%;
+  }
+
+  .social-icons li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .social-icons i {
+    font-size: 30px;
+  }
+
+  .bottom-bar p {
+    font-size: 14px;
+  }
+
+footer img {
+    width: 100px;
+    height: auto; /* mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* centraliza horizontalmente */
+}
+
+}
